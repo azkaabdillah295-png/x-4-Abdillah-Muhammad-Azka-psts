@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomba</title>
+    <script src="https://tailwindcss.com"></script>
+    <style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body class="bg-gray-100 p-4 font-sans text-gray-800">
+
+  <nav class="bg-blue-700 text-white p-3 flex justify-between items-center rounded mb-4">
+    <div class="font-bold">Lomba</div>
+    <div class="flex gap-4 text-sm">
+       <a href="#" class="hover:underline">home</a>
+       <a href="#" class="hover:underline">form</a>
+    </div>
+  </nav>
+   
+  <header class="bg-blue-600 text-white p-6 text-center rounded mb-6 shadow">
+    <h1 class="text-2xl font-bold mb-2">Hoby</h1>
+    <p class="">Silahkan daftar lomba yang kamu inginkan</p>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-2 gap-6 container mx-auto">
+
+    <section class="bg-white p-5 rounded border border-gray-300 shadow-sm">
+       <h2 class="text-lg font-bold mb-4 text-blue-600 border-b pb-2">form pendaftaran</h2> 
+
+       <form action="#" menthod="POST">
+        <div class="mb-4">
+           <label class="block text-sm font-medium mb-1">Student Name</label> 
+           <input type="text" placeholder="Enter Your Full Name" class="w-full p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <div class="mb-4">
+           <label class="block text-sm font-medium mb-1">Class</label> 
+           <div class="flex gap-4">
+            <label class="text-sm"><input type="radio" name="class" class="accent-blue-600">X</label>
+            <label class="text-sm"><input type="radio" name="class" class="accent-blue-600">XI</label>
+            <label class="text-sm"><input type="radio" name="class" class="accent-blue-600">XII</label>
+           </div>
+        </div>
+
+         <div class="mb-4">
+          <label class="block text-sm font-medium mb-1">Gender</label>
+          <div class="flex gap-4">
+            <label class="text-sm"><input type="radio" name="gender" class="accent-blue-600"> Male</label>
+            <label class="text-sm"><input type="radio" name="gender" class="accent-blue-600"> Female</label>
+          </div>
+        </div>
+        <h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+ <div class="mb-4">
+          <label class="block text-sm font-medium mb-1">Tipe Partisipasi</label>
+          <div class="flex gap-4">
+            <label class="text-sm"><input type="radio" name="partisipasi" class="accent-blue-600"> Individual</label>
+            <label class="text-sm"><input type="radio" name="partisipasi" class="accent-blue-600"> Team</label>
+          </div>
+        </div>
+          <div class="mb-4">
+           <label class="block text-sm font-medium mb-1">Team Name</label> 
+           <input type="text" placeholder="Enter Your Team Name" class="w-full p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        </div>
+       </form>
+    </section>
+  </main>
+</body>
+</html>
